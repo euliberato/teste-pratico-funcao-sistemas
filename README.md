@@ -1,6 +1,9 @@
 # Importante!
 
 ### Caso ocorra o erro:
+
+![image](https://github.com/user-attachments/assets/3e1a5cf8-4215-4c55-85df-82e5b88fc60c)
+
  ```bash
  Não foi possível localizar uma parte do caminho 'C:\Users\{seu-usuario}\Downloads\teste-pratico-funcao-sistemas-master\FI.WebAtividadeEntrevista\bin\roslyn\csc.exe'
  ```
