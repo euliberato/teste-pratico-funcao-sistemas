@@ -33,3 +33,33 @@
   - **CPF**
   - **NOME**
   - **IDCLIENTE**
+
+# Passo a Passo para Clonar o Repositório e Rodar a Solução `.sln`
+
+## 1. Clonar o Repositório Git
+
+1. **Abra o terminal** (Git Bash, Command Prompt, PowerShell ou outro terminal de sua escolha).
+2. **Navegue até o diretório** onde deseja clonar o repositório:
+   `cd /caminho/do/diretorio`
+3. **Clone o repositório** com o seguinte comando:
+   `git clone https://github.com/euliberato/teste-pratico-funcao-sistemas.git`
+4. **Entre no diretório clonado**:
+   `cd teste-pratico-funcao-sistemas`
+
+## 2. Rodar a Solução `.sln` do .NET
+
+1. **Abra o Visual Studio** (ou outra IDE compatível com .NET).
+2. No Visual Studio, vá para:
+   **Arquivo** > **Abrir** > **Projeto/Solução...**
+3. **Selecione o arquivo** `FI.WebAtividadeEntrevista.sln` no diretório clonado.
+4. **Restaurar os pacotes NuGet**:
+   No **Gerenciador de Soluções**, clique com o botão direito na solução e selecione **Restaurar Pacotes NuGet**.
+5. **Defina o projeto de inicialização**:
+   No **Gerenciador de Soluções**, clique com o botão direito no projeto principal (provavelmente `FI.WebAtividadeEntrevista`) e selecione **Definir como Projeto de Inicialização**.
+6. **Rodar a aplicação**:
+   Pressione `F5` ou clique no botão **Iniciar** para executar a solução.
+
+---
+
+Pronto! Agora a solução estará rodando no Visual Studio.
+
