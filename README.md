@@ -1,3 +1,20 @@
+# Importante!
+
+### Caso ocorra o erro:
+ ```bash
+ Não foi possível localizar uma parte do caminho 'C:\Users\{seu-usuario}\Downloads\teste-pratico-funcao-sistemas-master\FI.WebAtividadeEntrevista\bin\roslyn\csc.exe'
+ ```
+1. Abra o Visual Studio
+2. Pressione Ctrl + Q
+3. Pesquise por: Package Manager Console
+4. Abra e digite o comando abaixo:
+
+```bash
+Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r
+```
+
+5. Execute e tente startar o projeto novamente, isso deve bastar para resolver o erro
+
 # Implementação do CPF do Cliente
 
 ### Na tela de cadastramento/alteração de clientes, incluir um novo campo denominado **CPF**, que permitirá o cadastramento do CPF do cliente.
