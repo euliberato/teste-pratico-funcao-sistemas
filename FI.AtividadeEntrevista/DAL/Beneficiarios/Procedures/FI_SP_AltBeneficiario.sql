@@ -1,0 +1,21 @@
+CREATE PROC FI_SP_AltBeneficiario
+	@CPF		   VARCHAR (11),
+	@NOME          VARCHAR (50),
+	@IDCLIENTE    BIGINT,
+	@Id           BIGINT
+AS
+BEGIN
+
+	IF EXISTS (SELECT 1 FROM BENEFICIARIOS WHERE CPF = @CPF)
+			BEGIN
+				RAISERROR('CPF está sendo utilizado, tente novamente!', 16, 1);
+				RETURN;
+			END
+
+	UPDATE BENEFICIARIOS 
+	SET 
+		CPF = @CPF,
+		NOME = @NOME, 
+		IDCLIENTE = @IDCLIENTE
+	WHERE Id = @Id
+END
